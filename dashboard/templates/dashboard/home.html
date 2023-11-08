@@ -5,19 +5,35 @@
     <h1>Variant Dashboard</h1>
 
     <div class="row">
-        <table class="table">
+        <table class="table" width="100%" border="1.5px">
             <thead>
               <tr>
                 <th scope="col">Patient Name</th>
-                <th scope="col">Patient Age</th>          
+                <th scope="col">Patient Age</th>
+                <th scope="col">Disease Stage</th>     
+                <th scope="col">Disease Decription</th>     
+                <th scope="col">Sequencer</th>
+                <th scope="col">Gene</th>   
+                <th scope="col">Variant cDNA</th>     
+                <th scope="col">Variant Protein</th>     
+                <th scope="col">Variant Genome</th>     
+                <th scope="col">Variant Classification</th>     
               </tr>
             </thead>
             <tbody>
-              {% for patient in data %}
+              {% for variant in data %}
               <tr>
               <th scope="row">{{ forloop.counter }}</th>
-                <td>{{patient.Name}}</td>
-                <td>{{patient.Age}}</td>       
+                <td>{{Variants.Name}}</td>
+                <td>{{Variants.Age}}</td>
+                <td>{{Variants.Stage}}</td>
+                <td>{{Variants.Description}}</td>
+                <td>{{Variants.Sequencer}}</td>
+                <td>{{Variants.Gene}}</td>
+                <td>{{Variants.cDNA}}</td>
+                <td>{{Variants.Protein}}</td> 
+                <td>{{Variants.Genome}}</td> 
+                <td>{{Variants.Classification}}</td>    
               {% endfor %}
               </tr>
             </tbody>

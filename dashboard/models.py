@@ -16,3 +16,6 @@ class Variants(models.Model):
     Gene = models.CharField(max_length=50, null=True, blank=True)
     Classification = models.CharField(max_length=50, null=True, blank=True)
     history = HistoricalRecords()
+    
+    def __str__(self):
+        return self.Name

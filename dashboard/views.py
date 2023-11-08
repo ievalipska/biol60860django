@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from .models import Patient
+from .models import Variants
 
 
 def home(request):
-    patients = Patient.objects.all()
+    variants = Variants.objects.all()
     
     data = {
-        'patients': patients,
+        'variants': variants,
     }
     return render(request, 'dashboard/home.html', {'data': data})
 
