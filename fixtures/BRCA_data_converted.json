@@ -1,0 +1,695 @@
+[
+    {
+        "pk": 0,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "2,Betty Schmidt,40,3,Mixed_type,HiSeq,c.314A>G,\"p.(Tyr105Cys), p.Tyr105Cys\",g.41256266T>C,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "3,Connie Fields,48,1,Tubular,HiSeq,c.321del,p.(Phe107Leufs*12),g.41256259del,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "4,Rosemarie Simpson,43,2,Tubular,MiSeq,c.329dup,p.(Glu111Glyfs*3),g.41256251dup,BRCA1,P"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "5,Veronica Delgado,61,1,Mixed_type,HiSeq,c.370A>G,p.Ile124Val,g.41256210T>C,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "6,Melinda Roberts,37,3,Invasive_lobular,HiSeq,c.380G>A,p.Ser127Asn,g.41256200C>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "7,Annette Dawson,42,1,Mixed_type,HiSeq,c.390C>G,p.(Tyr130*),g.41256190G>C,BRCA1,B"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "8,Brandi Reeves,69,1,Invasive_lobular,HiSeq,c.396C>A,\"p.(Asn132Lys), p.Asn132Lys\",g.41256184G>T,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "9,Olive Johnson,35,1,Medullary,MiSeq,c.593+8A>G,?,g.41249253T>C,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "10,Eunice Potter,54,1,Tubular,MiSeq,c.593+16C>G,p.(=),g.41249245G>C,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "11,Alison Higgins,31,1,Invasive_ductal,HiSeq,c.593+25A>T,p.?,g.41249236T>A,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "12,Myra Meyer,28,1,Papillary,HiSeq,c.593+77T>C,p.?,g.41249184A>G,BRCA1,P"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "13,Terri Hill,63,2,Other,HiSeq,c.594-225G>A,p.(=),g.41248164C>T,BRCA1,B"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "14,Mandy Tyler,66,3,Medullary,HiSeq,c.594-203_670+515del,p.?,g.41247348_41248142del,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "15,Kayla Andrews,62,1,Papillary,HiSeq,c.594-60 del,p.(=),g.41247999del,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "16,Kimberly Massey,30,3,Mixed_type,HiSeq,c.594-34T>C,\"p.?, p.(=)\",g.41247973A>G,BRCA1,P"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "17,Kellie Pearson,56,1,Mucinous,HiSeq,c.594-15G>C,NA,g.41247954C>G,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "18,Dana Zimmerman,55,3,Papillary,HiSeq,c.594-2A>C,\"p.?, ?\",g.41247941T>G,BRCA1,B"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "19,Teri Mann,41,2,Invasive_lobular,MiSeq,c.594-2A>G,p.?,g.41247941T>C,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "20,Emma Ramsey,34,2,Other,MiSeq,c.594_597del,\"p.(Ser198Argfs*35), p.?\",g.41247936_41247939del,BRCA1,B"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "21,Vivian Hunt,58,1,Medullary,MiSeq,c.595G>A,p.(Val199Met),g.41247938C>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "22,Myrtle Fletcher,59,3,Invasive_ductal,HiSeq,c.612G>C,p.Leu204Phe,g.41247921C>G,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "23,Eloise Black,39,2,Papillary,HiSeq,c.616C>T,p.(Gln206*),g.41247917G>A,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "24,Holly Fernandez,25,3,Medullary,HiSeq,c.637A>G,p.Arg213Gly,g.41247896T>C,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "25,Doris Cole,27,3,Invasive_lobular,MiSeq,c.639G>A,p.(=),g.41247894C>T,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "26,Genevieve Nguyen,47,1,Mucinous,HiSeq,c.641A>G,p.(Asp214Gly),g.41247892T>C,BRCA1,B"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "27,Harriet Crawford,52,3,Invasive_ductal,HiSeq,c.652T>C,p.(=),g.41247881A>G,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "28,Johanna Burke,65,1,Mucinous,HiSeq,c.661G>T,p.Ala221Ser,g.41247872C>A,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "29,Bonnie Pena,36,3,Other,HiSeq,c.669G>A,p.(=),g.41247864C>T,BRCA1,B"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "30,Lorraine Wise,68,3,Other,MiSeq,c.670G>C,\"p.?, p.(Ala224Pro)\",g.41247863C>G,BRCA1,P"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "31,Shawna Arnold,26,2,Invasive_ductal,MiSeq,c.670+1delG,?,g.41247862delC,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "32,Nettie Rose,45,3,Tubular,HiSeq,c.670+1G>T,p.?,g.41247862C>A,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "33,Darla Sullivan,53,3,Mucinous,HiSeq,c.670+7G>A,?,g.41247856C>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "34,Carolyn Colon,38,3,Invasive_ductal,HiSeq,c.670+8C>A,p.?,g.41247855G>T,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "35,Irene James,57,3,Other,HiSeq,c.670+8C>T,\"p.?, p.=, ?, NA\",g.41247855G>A,BRCA1,B"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "36,Molly Copeland,67,3,Mixed_type,HiSeq,c.1881_1882insCC,p.(Ser628Profs*5),g.41245666_41245667insGG,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "37,Joanna White,51,2,Papillary,HiSeq,c.1884T>G,p.Ser628Arg,g.41245664A>C,BRCA1,B"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "38,Megan Greene,32,1,Invasive_ductal,HiSeq,c.1892dup,p.(Ser632Lysfs*4),g.41245656dup,BRCA1,P"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "39,Marie Brady,70,3,Invasive_lobular,HiSeq,c.1895G>A,p.Ser632Asn,g.41245653C>T,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "40,Renee Duncan,60,1,Papillary,MiSeq,c.3816C>A,p.(Asn1272Lys),g.41243732G>T,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "41,Sherri Castillo,50,2,Medullary,MiSeq,c.3820dup,p.(Val1274Glyfs*13),g.41243728dup,BRCA1,B"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "42,Jill Hodges,44,2,Tubular,MiSeq,c.3820dupG,p.(Val1274fs),g.41243728dup,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "43,Amy Rodgers,33,3,Papillary,HiSeq,c.3823A>G,\"p.(Ile1275Val), p.Ile1275Val\",g.41243725T>C,BRCA1,P"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "44,Jo Curtis,29,2,Mixed_type,HiSeq,c.3835G>A,p.(Ala1279Thr),g.41243713C>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "45,Rachael Davis,46,3,Tubular,HiSeq,c.3839_3840inv,p.(Ser1280*),g.41243708_41243709inv,BRCA1,P"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "46,Eleanor Lee,64,3,Medullary,MiSeq,c.3839_3843delinsAGGC,p.(Ser1280*),g.41243705_41243709delinsGCCT,BRCA1,P"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "47,Amber Cummings,63,3,Papillary,HiSeq,c.3841C>T,p.(Gln1281*),g.41243707G>A,BRCA1,P"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "48,Teresa Fuller,32,3,Other,HiSeq,c.3845A>T,p.(Glu1282Val),g.41243703T>A,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "49,Jana Daniels,41,2,Other,HiSeq,c.3851A>G,p.His1284Arg,g.41243697T>C,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "50,Jackie Byrd,48,2,Mucinous,HiSeq,c.3858_3861del,p.(Ser1286Argfs*20),g.41243687_41243690del,BRCA1,B"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "51,Jacqueline Hanson,55,1,Tubular,MiSeq,c.3869_3870del,p.(Lys1290Metfs*4),g.41243678_41243679del,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "52,Monica Fowler,65,1,Mixed_type,MiSeq,c.3878C>T,p.Ala1293Val,g.41243670G>A,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "53,Bethany Spencer,62,1,Invasive_ductal,HiSeq,c.3889delT,p.(fs),g.41243659delA,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "54,Belinda Hall,34,1,Tubular,HiSeq,c.3891_3893del,\"p.(Ser1298del), p.(Ser1297del)\",g.41243655_41243657del,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "55,Claire Cox,26,2,Invasive_lobular,HiSeq,c.3903T>A,\"p.(Ser1301Arg), p.(Ser1340Arg)\",g.41243645A>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "56,Janie Hamilton,43,2,Mucinous,HiSeq,c.3904G>T,p.(Glu1302*),g.41243644C>A,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "57,Jennifer Steele,31,2,Medullary,HiSeq,c.3910G>T,p.(Glu1304*),g.41243638C>A,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "58,Hilda Morris,52,2,Mixed_type,HiSeq,c.3914A>T,p.(Asp1305Val),g.41243634T>A,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "59,Bernadette Harvey,25,2,Mucinous,HiSeq,c.3916_3917del,p.(Leu1306Aspfs*23),g.41243631_41243632del,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "60,Velma Dean,27,1,Invasive_lobular,HiSeq,c.3918G>A,p.=,g.41243630C>T,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "61,Carol Carson,61,2,Other,MiSeq,c.3918G>T,p.(Leu1306Phe),g.41243630C>A,BRCA1,P"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "62,Faye Kelley,30,2,Medullary,MiSeq,c.3929C>A,p.Thr1310Lys,g.41243619G>T,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "63,Kendra Chapman,69,1,Invasive_lobular,MiSeq,c.3931_3934del,\"p.(Asn1311Profs*6), p.(Asn1311fs)\",g.41243614_41243617del,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "64,Elizabeth Paul,39,1,Invasive_ductal,HiSeq,c.3959C>G,p.(Ser1320Cys),g.41243589G>C,BRCA1,B"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "65,Margie Neal,64,3,Invasive_lobular,HiSeq,c.3973del,p.(Arg1325Glyfs*11),g.41243575del,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "66,Krystal Gill,60,2,Mucinous,HiSeq,c.3994G>A,p.(Gly1332*),g.41243554C>T,BRCA1,B"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "67,Marta Young,37,2,Papillary,MiSeq,c.4002T>C,p.(=),g.41243546A>G,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "68,Sonya Barker,49,3,Mixed_type,HiSeq,c.4013del,p.(Lys1338fs),g.41243535del,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "69,Miranda Hughes,59,3,Invasive_ductal,HiSeq,c.4015dup,p.(Glu1339Glyfs*6),g.41243533dup,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "70,Candace Ortiz,53,1,Papillary,HiSeq,c.4015dupG,p.(Glu1339fs),g.41243533dup,BRCA1,P"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "71,Mercedes Keller,35,1,Invasive_ductal,HiSeq,c.4015G>A,p.(Glu1339Lys),g.41243533C>T,BRCA1,B"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "72,Nicole Valdez,70,3,Tubular,MiSeq,c.4025C>T,p.(Ser1342Leu),g.41243523G>A,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "73,Ella Munoz,36,2,Tubular,MiSeq,c.4026A>C,p.(=),g.41243522T>G,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "74,Carrie Fitzgerald,38,1,Mucinous,HiSeq,c.4035del,\"p.(Glu1346Lysfs*20), p.(Glu1346fs)\",g.41243513del,BRCA1,B"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "75,Ashley Maxwell,54,2,Medullary,HiSeq,c.4036G>A,\"p.Glu1346Lys, p.(Glu1346Lys)\",g.41243512C>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "76,Shannon Simmons,58,1,Mucinous,HiSeq,c.4039A>G,\"p.(Arg1347Gly), p.Arg1347Gly\",g.41243509T>C,BRCA1,BUS"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "77,Emily Hardy,40,1,Invasive_lobular,HiSeq,c.4045A>C,p.Thr1349Pro,g.41243503T>G,BRCA1,B"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "78,Jean Fox,47,3,Mixed_type,HiSeq,c.4046C>G,p.Thr1349Arg,g.41243502G>C,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "79,Gayle Webster,67,3,Other,HiSeq,c.4046C>T,\"p.(Thr1349Met), p.Thr1349Met\",g.41243502G>A,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "80,Stacey Jenkins,57,3,Mucinous,HiSeq,c.4054G>A,p.(Glu1352Lys),g.41243494C>T,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "81,Hannah Sparks,33,1,Mixed_type,HiSeq,c.4057G>T,p.(Glu1353*),g.41243491C>A,BRCA1,B"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "82,Stella Walsh,66,2,Invasive_ductal,MiSeq,c.4065_4068del,\"p.(Asn1355LysfsTer10), p.(Asn1355Lysfs*10), p.Asn1355fs, p.(Asn1355fs)\",g.41243480_41243483del,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "83,Mona Farmer,42,3,Medullary,MiSeq,c.4081A>C,p.Met1361Leu,g.41243467T>G,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "84,Lana Harris,51,2,Papillary,MiSeq,c.4088C>G,p.(Ser1363*),g.41243460G>C,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "85,Angie Jones,46,3,Tubular,MiSeq,c.4096G>A,p.(Gly1366Ser),g.41243452C>T,BRCA1,LB"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "86,Ann Woods,28,2,Invasive_lobular,MiSeq,c.4096+1G>A,?,g.41243451C>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "87,Shelia Stephens,44,1,Other,MiSeq,c.4096+3A>T,p.?,g.41243449T>A,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "88,Claudia Payne,56,1,Medullary,MiSeq,c.4096+6G>A,p.?,g.41243446C>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "89,Natalie Knight,50,3,Medullary,MiSeq,c.4096+27C>T,p.?,g.41243425G>A,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "90,Laverne Anderson,29,1,Other,MiSeq,c.4096+162delA,p.?,g.41243290delT,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "91,Elvira Lane,45,2,Mixed_type,HiSeq,c.4097-141A>C,p.(=),g.41243190T>G,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "92,Felicia Griffith,68,2,Tubular,HiSeq,c.4097-21C>T,p.?,g.41243070G>A,BRCA1,P"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "93,Joann Reid,64,3,Invasive_ductal,HiSeq,c.548-9A>G,p.?,g.41249315T>C,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "94,Faith Foster,55,2,Papillary,HiSeq,c.552T>C,p.=,g.41249302A>G,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "95,Sophia Brooks,38,2,Invasive_lobular,HiSeq,c.556T>G,p.(Ser186Ala),g.41249298A>C,BRCA1,LP"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "96,Toni Tran,41,1,Other,HiSeq,c.557C>A,\"p.(Ser186Tyr), p.Ser186Tyr\",g.41249297G>T,BRCA1,P"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "97,Lauren Harrison,26,2,Tubular,HiSeq,c.(-20+1_-19-1)_(*1383_?)del,p.?,g.(?_41196312)_(41276133_41277287)del,BRCA1,P"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "98,Lorene Reynolds,49,3,Invasive_lobular,HiSeq,c.-20+11C>T,p.?,g.41277277G>A,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 97,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "99,Mindy Tucker,40,1,Other,MiSeq,c.-20+101C>G,p.(=),g.41277187G>C,BRCA1,VUS"
+        }
+    },
+    {
+        "pk": 98,
+        "model": "dashboard:Variants",
+        "fields": {
+            "1,Pearl Dixon,49,2,Mucinous,HiSeq,c.303T>G,p.(Tyr101*),g.41256277A>C,BRCA1,VUS": "100,Geneva Howard,65,3,Mixed_type,HiSeq,c.-19-134T>C,p.(=),g.41276266A>G,BRCA1,P"
+        }
+    }
+]
