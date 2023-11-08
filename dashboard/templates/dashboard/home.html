@@ -45,7 +45,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    {% for variant in data %} <!-- Loading in data specified in views.py -->
+                                    {% for variant in variants %} <!-- Loading in data specified in views.py -->
                                         <tr>
                                             <!-- Adding table column data -->
                                             <td>{{ variant.Name }}</td>
@@ -54,9 +54,9 @@
                                             <td>{{ variant.Description }}</td>
                                             <td>{{ variant.Sequencer }}</td>
                                             <td>{{ variant.Gene }}</td>
-                                            <td>{{ variant.cDNA }}</td>
-                                            <td>{{ variant.Protein }}</td>
-                                            <td>{{ variant.Genome }}</td>
+                                            <td>{{ variant.cDNA_variant }}</td>
+                                            <td>{{ variant.protein_variant }}</td>
+                                            <td>{{ variant.genomic_variant }}</td>
                                             <td>{{ variant.Classification }}</td>
                                         </tr>
                                     {% endfor %}
