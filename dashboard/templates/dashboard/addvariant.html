@@ -3,5 +3,82 @@
 {% block content %}
 
     <h1>Add Variant</h1>
+    <form id="variantForm">
+    {% csrf_token %}
+    
+    <label for="patientName">Patient Name:</label>
+    <input type="text" id="patientName" name="patientName" required><br><br>
+    
+    <label for="patientAge">Patient Age:</label>
+    <input type="number" id="patientAge" name="patientAge" required><br><br>
+    
+    <label for="diseaseStage">Disease Stage:</label>
+    <input type="number" id="diseaseStage" name="diseaseStage" required><br><br>
+    
+    <label for="diseaseDescription">Disease Description:</label>
+    <input type="text" id="diseaseDescription" name="diseaseDescription" required><br><br>
+    
+    <label for="sequencer">Sequencer:</label>
+    <input type="text" id="sequencer" name="sequencer" required><br><br>
+    
+    <label for="Gene">Gene:</label>
+    <input type="text" id="Gene" name="Gene" required><br><br>
+    
+    <label for="cdnaVariant">Variant cDNA:</label>
+    <input type="text" id="cdnaVariant" name="cdnaVariant" required><br><br>
+    
+    <label for="proteinVariant">Variant Protein:</label>
+    <input type="text" id="proteinVariant" name="proteinVariant" required><br><br>
+    
+    <label for="genome">Variant Genome:</label>
+    <input type="text" id="genome" name="genome" required><br><br>
+
+    <label for="classification">Variant Classification:</label>
+    <input type="text" id="classification" name="classification" required><br><br>
+    
+    
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+  
+  <script>
+  function submitForm() {
+    var formData = {
+      Name: document.getElementById("patientName").value,
+      Age: parseInt(document.getElementById("patientAge").value),
+      Stage: parseInt(document.getElementById("diseaseStage").value),
+      Description: document.getElementById("diseaseDescription").value,
+      Sequencer: document.getElementById("sequencer").value,
+      Gene: document.getElementById("Gene").value,
+      cDNA_variant: document.getElementById("cdnaVariant").value,
+      protein_variant: document.getElementById("proteinVariant").value,
+      genomic_variant: document.getElementById("genome").value,
+      Classification: document.getElementById("classification").value,
+    };
+  
+    fetch('/createvariant', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRFToken': document.getElementsByName('csrfmiddlewaretoken')[0].value
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.error) {
+            alert(data.error);
+        }
+        else {
+            window.location = "/";
+        }
+
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      // Handle error if needed
+    });
+  }
+  </script>
+  
 
 {% endblock %}

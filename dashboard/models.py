@@ -10,10 +10,10 @@ class Variants(models.Model):
     Stage = models.IntegerField(null=True, blank=True)
     Description = models.CharField(max_length=50, null=True, blank=True)
     Sequencer = models.CharField(max_length=100, null=True, blank=True)
+    Gene = models.CharField(max_length=50, null=True, blank=True)
     cDNA_variant = models.CharField(max_length=100, null=True, blank=True)
     protein_variant = models.CharField(max_length=100, null=True, blank=True)
     genomic_variant = models.CharField(max_length=100, null=True, blank=True)
-    Gene = models.CharField(max_length=50, null=True, blank=True)
     Classification = models.CharField(max_length=50, null=True, blank=True)
     history = HistoricalRecords()
     

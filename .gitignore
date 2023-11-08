@@ -3,6 +3,7 @@
 *~
 __pycache__
 
+
 # Env
 .env
 myvenv/
@@ -31,4 +32,3 @@ $RECYCLE.BIN/
 .history/
 *.code-workspace
 
-db.sqlite3
