@@ -1,6 +1,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Variant Dashboard</h2>
-    <p>Stuff etc etc.</p>
-{% endblock content %}
+
+    <h1>Variant Dashboard</h1>
+
+    <div class="row">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Patient Name</th>
+                <th scope="col">Patient Age</th>          
+              </tr>
+            </thead>
+            <tbody>
+              {% for patient in data %}
+              <tr>
+              <th scope="row">{{ forloop.counter }}</th>
+                <td>{{patient.Name}}</td>
+                <td>{{patient.Age}}</td>       
+              {% endfor %}
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+{% endblock %}
