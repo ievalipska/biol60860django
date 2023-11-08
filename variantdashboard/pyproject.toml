@@ -3,5 +3,5 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "my_package"
+name = "variantdashboard"
 version = "1"
