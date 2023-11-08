@@ -3,7 +3,7 @@ import json
 
 # Define the input and output file paths
 input_file = 'BRCA_data.tsv'
-output_file = 'BRCA_data_converted.json'
+output_file = 'fixtures/BRCA_data_converted.json' 
 
 # Read the TSV file and convert it to a list of dictionaries
 data = []
