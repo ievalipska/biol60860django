@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'simple_history',
     'dashboard',
+    'django_tables2',
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
