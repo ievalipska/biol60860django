@@ -7,19 +7,33 @@ def home(request):
     return filtered(request)
     
 def filtered(request, column=None, filter=None):
-    #Use column and filter to narrow down list of variants that are returned. CASE SENSITIVE.
+    #Use column and filter to narrow down list of variants that are returned. Modified to be case insensitive.
 
 
     
     variants = Variants.objects.all()
-    #if column=="Name":
-        #variants = [v for v in variants if filter in v.Name]
+    
     if column == "Name":
         variants = [v for v in variants if str(filter).lower() in str(v.Name).lower()]
-        print(variants)
-    
+    if column=="Age":
+        variants = [v for v in variants if int(filter)==int(v.Age)]
+    if column=="Stage":
+        variants = [v for v in variants if int(filter)==int(v.Stage)]
+    if column == "Description":
+        variants = [v for v in variants if str(filter).lower() in str(v.Description).lower()]
+    if column == "Sequencer":
+        variants = [v for v in variants if str(filter).lower() in str(v.Sequencer).lower()] 
+    if column == "Gene":
+        variants = [v for v in variants if str(filter).lower() in str(v.Gene).lower()]
+    if column == "cDNA_variant":
+        variants = [v for v in variants if str(filter).lower() in str(v.cDNA_variant).lower()]
+    if column == "protein_variant":
+        variants = [v for v in variants if str(filter).lower() in str(v.protein_variant).lower()]
+    if column == "genomic_variant":
+        variants = [v for v in variants if str(filter).lower() in str(v.genomic_variant).lower()]
+    if column == "Classification":
+        variants = [v for v in variants if str(filter).lower() in str(v.Classification).lower()]
 
-        #Copy paste for all fields. Int should be different?
     return render(request, 'dashboard/home.html', {'variants': variants})
 
 
