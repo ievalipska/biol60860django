@@ -25,10 +25,57 @@
             </h1>
             <p>
                 Please email <a href="mailto:binf-support-team@nhs.uk">binf-support-team@nhs.uk</a> for assistance with this web app
+            <p>                 
+                 <h6 style="color:#13BEC2;">
+                    <b> Please note: </b> after performing a search query, you must return to the homepage, otherwise the search function will not work.  
+                </h6>
             </p>
         </div>
     </div>
    
+    <!-- Basic code structure for implementing a search function. -->
+    <div>
+        <label for="column">Column:</label>
+        <select id="column" name="column">
+            <option value selected> - </option>
+            <option value="Name">Patient Name</option>
+            <option value="Age">Patient Age</option>
+            <option value="Stage">Disease Stage</option>
+            <option value="Description">Disease Description</option>
+            <option value="Sequencer">Sequencer</option>
+            <option value="cDNA_variant">Variant cDNA</option>
+            <option value="protein_variant">Variant Protein</option>
+            <option value="genomic_variant">Variant Genome</option>
+            <option value="Gene">Gene</option>
+            <option value="Classification">Variant Classification</option>
+        </select>
+    </div>
+    <div>
+        <label for="filter">Filter:</label>
+        <input type="text" id="filter" name="filter">
+    </div>
+    <button onclick="search()">Search</button>
+    
+    <script>
+
+        //Redirects to the filtered view if values are passed, if no filter applied, it will redirect to home.
+        function search() {
+            var dropdownValue = document.getElementById("column").value;
+            var textFieldValue = document.getElementById("filter").value;
+    
+            if (dropdownValue && textFieldValue) {
+                window.location = `filtered/${dropdownValue}/${textFieldValue}`;
+            }
+
+            // This will send you back to home if query is invalid. Can edit to change behaviour.
+            else {
+                window.location.replace ("/");
+
+            }
+        }
+    </script>
+
+    
 
     <!-- Adding data table -->
         <div class="row">
