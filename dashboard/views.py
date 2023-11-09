@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Variants
 from django.http import JsonResponse
 import json
@@ -44,7 +44,7 @@ def createvariant(request):
 def editvariant(request, pk):
     if request.method == 'POST':
         try:
-            instance = Variants.objects.get(pk=pk)
+            instance = get_object_or_404(Variants, pk=pk)
             
             instance.Name = request.POST.get('Name')
             instance.Age = request.POST.get('Age')
@@ -58,10 +58,11 @@ def editvariant(request, pk):
             instance.Classification = request.POST.get('Classification')
             
             instance.save()
-        
             return redirect('home')
-        except Variants.DoesNotExist:
-            return JsonResponse({'status': 'error'})      
+        
+        except Exception as e:
+            print(e)
+            return JsonResponse({'status': 'error'})
     
     else:
         return JsonResponse({'status': 'error'})

@@ -72,7 +72,7 @@
                                             <td contenteditable="true">{{ variant.Classification }}</td>
                                             <td>
                                                 {% csrf_token %}   
-                                                <form method="post" action="{% url 'editvariant' pk=variant.id %}">
+                                                <!-- <form method="post" action="{% url 'editvariant' pk=variant.id %}"> -->
                                                 <input type="hidden" name = "id" value="{{ variant.id }}">
                                                 <button type-"submit" class="btn btn-primary save-btn">SAVE</button>
                                             </td>
