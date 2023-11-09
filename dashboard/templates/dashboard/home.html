@@ -42,6 +42,7 @@
                                             <th>Variant Protein</th>     
                                             <th>Variant Genome</th>     
                                             <th>Variant Classification</th> 
+                                            <th>Record changes</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -58,9 +59,18 @@
                                             <td>{{ variant.protein_variant }}</td>
                                             <td>{{ variant.genomic_variant }}</td>
                                             <td>{{ variant.Classification }}</td>
-                                        </tr>
+                                            
+                                            
+                                            <!-- check if there are any historical records associated to variant -->
+                                            {% if variant.history.all %} 
+                                                <td>{{ variant.history.first.history_date }}</td>
+                                            {% else %}
+                                                <td>No changes</td>
+                                            {% endif %}
+                                        </tr>                                        
                                     {% endfor %}
-                                    </tbody>
+                                    
+                                    </tbody>                                    
                                 </table>
                             </div>
                         </div>
@@ -75,6 +85,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap.min.css">
 <script src= "https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 <script src= "https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap.min.js"></script>
+
 
 <!-- run javascript to display datatable -->
 <script>
