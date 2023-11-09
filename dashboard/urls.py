@@ -5,4 +5,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('addvariant', views.addvariant, name='addvariant'),
     path('createvariant', views.createvariant, name='createvariant'),
+    path('editvariant/<int:pk>', views.editvariant, name='editvariant'),
+    
 ]
