@@ -7,12 +7,17 @@ def home(request):
     return filtered(request)
     
 def filtered(request, column=None, filter=None):
-    #Use column and filter to narrow down list of variants that are returned. 
+    #Use column and filter to narrow down list of variants that are returned. CASE SENSITIVE.
+
 
     
     variants = Variants.objects.all()
-    if column=="Name":
-        variants = [v for v in variants if filter in v.Name]
+    #if column=="Name":
+        #variants = [v for v in variants if filter in v.Name]
+    if column == "Name":
+        variants = [v for v in variants if str(filter).lower() in str(v.Name).lower()]
+        print(variants)
+    
 
         #Copy paste for all fields. Int should be different?
     return render(request, 'dashboard/home.html', {'variants': variants})
