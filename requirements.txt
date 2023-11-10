@@ -1,1 +1,4 @@
 Django~=3.2.10
+django-simple-history~=3.4.0
+django-bootstrap3
+django_tables2

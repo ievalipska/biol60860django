@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap3 %}
+{% load static %}
+
+
+<style>
+
+    h1 {
+        margin-top: 20px;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 3em;
+        font-weight: bold;
+        color: #333;
+    }
+
+    p {
+        font-family: 'Helvetica', sans-serif; 
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+</style>
+
+<!-- Adding header -->
+<div class="panel panel-default">
+    <div class="panel-heading ">
+        <div>
+            <h1>
+                VARIANT DASHBOARD
+            </h1>
+            <p>
+                Please email <a href="mailto:binf-support-team@nhs.uk">binf-support-team@nhs.uk</a> for assistance with this web app
+            <p>                 
+                 <h6 style="color:#13BEC2;">
+                    <b> Please note: </b> after performing a search query, you must return to the homepage, otherwise the search function will not work.  
+                </h6>
+            </p>
+        </div>
+    </div>
+   
+    <!-- Basic code structure for implementing a search function. -->
+    <div>
+        <label for="column">Column:</label>
+        <select id="column" name="column">
+            <option value selected> - </option>
+            <option value="Name">Patient Name</option>
+            <option value="Age">Patient Age</option>
+            <option value="Stage">Disease Stage</option>
+            <option value="Description">Disease Description</option>
+            <option value="Sequencer">Sequencer</option>
+            <option value="cDNA_variant">Variant cDNA</option>
+            <option value="protein_variant">Variant Protein</option>
+            <option value="genomic_variant">Variant Genome</option>
+            <option value="Gene">Gene</option>
+            <option value="Classification">Variant Classification</option>
+        </select>
+    </div>
+    <div>
+        <label for="filter">Filter:</label>
+        <input type="text" id="filter" name="filter">
+    </div>
+    <button onclick="search()">SEARCH</button>
+    
+    <script>
+
+        //Redirects to the filtered view if values are passed, if no filter applied, it will redirect to home.
+        function search() {
+            var dropdownValue = document.getElementById("column").value;
+            var textFieldValue = document.getElementById("filter").value;
+    
+            if (dropdownValue && textFieldValue) {
+                window.location = `filtered/${dropdownValue}/${textFieldValue}`;
+            }
+
+            // This will send you back to home if query is invalid. Can edit to change behaviour.
+            else {
+                window.location.replace ("/");
+
+            }
+        }
+    </script>
+
+    <br> </br>
+
+    <!-- Adding data table -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="table-responsive">
+                                <table width="100%" class="table table-striped table-bordered table-hover"
+                                    id="main_datatable">
+                                    <thead>
+                                        <tr>
+                                            <!-- Adding table column headers -->
+                                            <th>Database ID</th>
+                                            <th>Patient Name</th>
+                                            <th>Patient Age</th>
+                                            <th>Disease Stage</th>     
+                                            <th>Disease Description</th>     
+                                            <th>Sequencer</th>
+                                            <th>Gene</th>   
+                                            <th>Variant cDNA</th>     
+                                            <th>Variant Protein</th>     
+                                            <th>Variant Genome</th>     
+                                            <th>Variant Classification</th> 
+                                            <th>Record changes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for variant in variants %} <!-- Loading in data specified in views.py -->
+                                        <tr>
+                                            <!-- Adding table column data -->
+                                            <td name="id">{{ variant.id }}</td>
+                                            <td contenteditable="true">{{ variant.Name }}</td>
+                                            <td contenteditable="true">{{ variant.Age }}</td>
+                                            <td contenteditable="true">{{ variant.Stage }}</td>
+                                            <td contenteditable="true">{{ variant.Description }}</td>
+                                            <td contenteditable="true">{{ variant.Sequencer }}</td>
+                                            <td contenteditable="true">{{ variant.Gene }}</td>
+                                            <td contenteditable="true">{{ variant.cDNA_variant }}</td>
+                                            <td contenteditable="true">{{ variant.protein_variant }}</td>
+                                            <td contenteditable="true">{{ variant.genomic_variant }}</td>
+                                            <td contenteditable="true">{{ variant.Classification }}</td>
+                                    
+                                            <!-- check if there are any historical records associated to variant -->
+                                            {% if variant.history.all %} 
+                                                <td>{{ variant.history.first.history_date }}</td>
+                                            {% else %}
+                                                <td>No changes</td>
+                                            {% endif %}
+                                    
+                                            <!-- save button for editing data -->
+                                            <td>
+                                                {% csrf_token %}   
+                                                <!-- <form method="post" action="{% url 'editvariant' pk=variant.id %}"> -->
+                                                <input type="hidden" name = "id" value="{{ variant.id }}">
+                                                <button type-"submit" class="btn btn-primary save-btn">SAVE</button>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}  
+                                    </tbody>                                    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+<!-- CDN Links to activate datatables with sorting functionallity -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap.min.css">
+<script src= "https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+<script src= "https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap.min.js"></script>
+<script src= "https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src= "https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src= "{% static 'dashboard/js/editable_table.js' %}"></script>
+
+
+<!-- run javascript to display datatable -->
+<script>
+    $(document).ready(function () {
+        $('#main_datatable').DataTable({responsive:true,
+                                        order:[[1, "asc"], [0, "asc"]]})
+                                        });
+</script>
+
+{% endblock %}
+
+</html>
+
+
