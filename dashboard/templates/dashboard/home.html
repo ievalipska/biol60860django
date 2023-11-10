@@ -106,12 +106,14 @@
                                             <th>Variant Protein</th>     
                                             <th>Variant Genome</th>     
                                             <th>Variant Classification</th> 
+                                            <th>Record changes</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     {% for variant in variants %} <!-- Loading in data specified in views.py -->
                                         <tr>
                                             <!-- Adding table column data -->
+                                 
                                             <td name="id">{{ variant.id }}</td>
                                             <td contenteditable="true">{{ variant.Name }}</td>
                                             <td contenteditable="true">{{ variant.Age }}</td>
@@ -123,6 +125,15 @@
                                             <td contenteditable="true">{{ variant.protein_variant }}</td>
                                             <td contenteditable="true">{{ variant.genomic_variant }}</td>
                                             <td contenteditable="true">{{ variant.Classification }}</td>
+                                            
+                                            <!-- check if there are any historical records associated to variant -->
+                                            {% if variant.history.all %} 
+                                                <td>{{ variant.history.first.history_date }}</td>
+                                            {% else %}
+                                                <td>No changes</td>
+                                            {% endif %}
+                                            
+                                          <!-- save button for editing data -->
                                             <td>
                                                 {% csrf_token %}   
                                                 <!-- <form method="post" action="{% url 'editvariant' pk=variant.id %}"> -->
@@ -130,8 +141,10 @@
                                                 <button type-"submit" class="btn btn-primary save-btn">SAVE</button>
                                             </td>
                                         </tr>
+
                                     {% endfor %}
-                                    </tbody>
+                                    
+                                    </tbody>                                    
                                 </table>
                             </div>
                         </div>
@@ -151,6 +164,7 @@
 <script src= "https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src= "{% static 'dashboard/js/editable_table.js' %}"></script>
 
+
 <!-- run javascript to display datatable -->
 <script>
     $(document).ready(function () {
@@ -162,4 +176,5 @@
 {% endblock %}
 
 </html>
+
 
