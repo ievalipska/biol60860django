@@ -36,7 +36,7 @@
 
 6. To bring up the server
 
-  `python manage.py runsserver`
+  `python manage.py runserver`
 
 <br>
 
