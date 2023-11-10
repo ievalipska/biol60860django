@@ -7,5 +7,6 @@ urlpatterns = [
     re_path(r"^filtered/(?P<column>.+)/(?P<filter>.+)$", views.filtered, name="filtered"),
     path('addvariant', views.addvariant, name='addvariant'),
     path('createvariant', views.createvariant, name='createvariant'),
-    path('editvariant/<int:pk>', views.editvariant, name='editvariant'),  
+    path('editvariant/<int:pk>', views.editvariant, name='editvariant'),
+    path('summary', views.summary, name='summary'),  
 ]

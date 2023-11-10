@@ -5,6 +5,7 @@
 
 
 <style>
+
     h1 {
         margin-top: 20px;
         font-family: 'Helvetica', sans-serif;
@@ -12,16 +13,21 @@
         font-weight: bold;
         color: #333;
     }
+
     p {
         font-family: 'Helvetica', sans-serif; 
     }
+
     button {
         margin-top: 10px;
     }
+
     label {
         margin-top: 10px;
     }
+
 </style>
+
 <!-- Adding header -->
 <div class="panel panel-default">
     <div class="panel-heading ">
@@ -113,7 +119,6 @@
                                     {% for variant in variants %} <!-- Loading in data specified in views.py -->
                                         <tr>
                                             <!-- Adding table column data -->
-                                 
                                             <td name="id">{{ variant.id }}</td>
                                             <td contenteditable="true">{{ variant.Name }}</td>
                                             <td contenteditable="true">{{ variant.Age }}</td>
@@ -125,15 +130,15 @@
                                             <td contenteditable="true">{{ variant.protein_variant }}</td>
                                             <td contenteditable="true">{{ variant.genomic_variant }}</td>
                                             <td contenteditable="true">{{ variant.Classification }}</td>
-                                            
+                                    
                                             <!-- check if there are any historical records associated to variant -->
                                             {% if variant.history.all %} 
                                                 <td>{{ variant.history.first.history_date }}</td>
                                             {% else %}
                                                 <td>No changes</td>
                                             {% endif %}
-                                            
-                                          <!-- save button for editing data -->
+                                    
+                                            <!-- save button for editing data -->
                                             <td>
                                                 {% csrf_token %}   
                                                 <!-- <form method="post" action="{% url 'editvariant' pk=variant.id %}"> -->
@@ -141,9 +146,7 @@
                                                 <button type-"submit" class="btn btn-primary save-btn">SAVE</button>
                                             </td>
                                         </tr>
-
-                                    {% endfor %}
-                                    
+                                    {% endfor %}  
                                     </tbody>                                    
                                 </table>
                             </div>

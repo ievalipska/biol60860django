@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Variants
+from django.db.models import Count
 from django.http import JsonResponse
+from .models import Variants
 import json
 
 def home(request):
@@ -32,6 +33,7 @@ def filtered(request, column=None, filter=None):
     if column == "Classification":
         variants = [v for v in variants if str(filter).lower() in str(v.Classification).lower()]
 
+    
     return render(request, 'dashboard/home.html', {'variants': variants})
 
 
@@ -94,3 +96,18 @@ def editvariant(request, pk):
         return JsonResponse({'status': 'error'})
     
     
+def summary(request):
+    # Get data for summary statistics
+    total_items = Variants.objects.count()
+    unique_patients = Variants.objects.values('Name').distinct().count()
+    total_genes = Variants.objects.values('Gene').distinct().count()
+    
+    data = {
+        'total_items': total_items,
+        'unique_patients': unique_patients,
+        'total_genes': total_genes,
+    }
+    
+    return render(request, 'dashboard/summary.html', data)
+
+
