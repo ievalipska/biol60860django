@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        color: #333;
+    }
+
+  </style>
+
+
+  
+
+    <div class="container">
+        <h1>SUMMARY</h1>
+        <p><strong>Total Database Records:</strong> {{ total_items }}</p>
+        <p><strong>Total Patients:</strong> {{ unique_patients }}</p>
+        <p><strong>Total Genes:</strong> {{ total_genes }}</p>
+    </div>
+
+{% endblock %}
+
