@@ -1,20 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
 {% load bootstrap3 %}
+{% load static %}
 
 
+<style>
+    h1 {
+        margin-top: 20px;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 3em;
+        font-weight: bold;
+        color: #333;
+    }
+    p {
+        font-family: 'Helvetica', sans-serif; 
+    }
+    button {
+        margin-top: 10px;
+    }
+    label {
+        margin-top: 10px;
+    }
+</style>
 <!-- Adding header -->
 <div class="panel panel-default">
     <div class="panel-heading ">
         <div>
             <h1>
-                Variant Dashboard
+                VARIANT DASHBOARD
             </h1>
             <p>
-                Current variant information in the database. help text...
-            <p> 
-            </h1> 
-                
+                Please email <a href="mailto:binf-support-team@nhs.uk">binf-support-team@nhs.uk</a> for assistance with this web app
+            <p>                 
                  <h6 style="color:#13BEC2;">
                     <b> Please note: </b> after performing a search query, you must return to the homepage, otherwise the search function will not work.  
                 </h6>
@@ -43,7 +60,7 @@
         <label for="filter">Filter:</label>
         <input type="text" id="filter" name="filter">
     </div>
-    <button onclick="search()">Search</button>
+    <button onclick="search()">SEARCH</button>
     
     <script>
 
@@ -64,15 +81,12 @@
         }
     </script>
 
-    
+    <br> </br>
 
     <!-- Adding data table -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h4>{% bootstrap_label "Variant Information"%}</h4>
-                    </div>
                     <div class="panel-body">
                         <div class="row">
                             <div class="table-responsive">
@@ -81,6 +95,7 @@
                                     <thead>
                                         <tr>
                                             <!-- Adding table column headers -->
+                                            <th>Database ID</th>
                                             <th>Patient Name</th>
                                             <th>Patient Age</th>
                                             <th>Disease Stage</th>     
@@ -97,16 +112,23 @@
                                     {% for variant in variants %} <!-- Loading in data specified in views.py -->
                                         <tr>
                                             <!-- Adding table column data -->
-                                            <td>{{ variant.Name }}</td>
-                                            <td>{{ variant.Age }}</td>
-                                            <td>{{ variant.Stage }}</td>
-                                            <td>{{ variant.Description }}</td>
-                                            <td>{{ variant.Sequencer }}</td>
-                                            <td>{{ variant.Gene }}</td>
-                                            <td>{{ variant.cDNA_variant }}</td>
-                                            <td>{{ variant.protein_variant }}</td>
-                                            <td>{{ variant.genomic_variant }}</td>
-                                            <td>{{ variant.Classification }}</td>
+                                            <td name="id">{{ variant.id }}</td>
+                                            <td contenteditable="true">{{ variant.Name }}</td>
+                                            <td contenteditable="true">{{ variant.Age }}</td>
+                                            <td contenteditable="true">{{ variant.Stage }}</td>
+                                            <td contenteditable="true">{{ variant.Description }}</td>
+                                            <td contenteditable="true">{{ variant.Sequencer }}</td>
+                                            <td contenteditable="true">{{ variant.Gene }}</td>
+                                            <td contenteditable="true">{{ variant.cDNA_variant }}</td>
+                                            <td contenteditable="true">{{ variant.protein_variant }}</td>
+                                            <td contenteditable="true">{{ variant.genomic_variant }}</td>
+                                            <td contenteditable="true">{{ variant.Classification }}</td>
+                                            <td>
+                                                {% csrf_token %}   
+                                                <!-- <form method="post" action="{% url 'editvariant' pk=variant.id %}"> -->
+                                                <input type="hidden" name = "id" value="{{ variant.id }}">
+                                                <button type-"submit" class="btn btn-primary save-btn">SAVE</button>
+                                            </td>
                                         </tr>
                                     {% endfor %}
                                     </tbody>
@@ -120,10 +142,14 @@
 </div>
 
 
+
 <!-- CDN Links to activate datatables with sorting functionallity -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap.min.css">
 <script src= "https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 <script src= "https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap.min.js"></script>
+<script src= "https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src= "https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src= "{% static 'dashboard/js/editable_table.js' %}"></script>
 
 <!-- run javascript to display datatable -->
 <script>
@@ -133,6 +159,7 @@
                                         });
 </script>
 
-
 {% endblock %}
+
 </html>
+

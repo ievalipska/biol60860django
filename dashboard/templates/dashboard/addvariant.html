@@ -2,7 +2,18 @@
 
 {% block content %}
 
-    <h1>Add Variant</h1>
+  <style>
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        color: #333;
+    }
+  </style>
+
+    <h1>ADD NEW VARIANT</h1>
     <form id="variantForm">
     {% csrf_token %}
     

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Variants
 from django.http import JsonResponse
 import json
@@ -9,8 +9,6 @@ def home(request):
 def filtered(request, column=None, filter=None):
     #Use column and filter to narrow down list of variants that are returned. Modified to be case insensitive.
 
-
-    
     variants = Variants.objects.all()
     
     if column == "Name":
@@ -40,6 +38,7 @@ def filtered(request, column=None, filter=None):
 def addvariant(request):
     return render(request, 'dashboard/addvariant.html')
 
+
 def createvariant(request):
     insert = json.loads(request.body)
     
@@ -57,8 +56,6 @@ def createvariant(request):
         and "Classification" in insert and len(insert["Classification"]) > 0
     )
 
-
-
     if not check_fields:
         return JsonResponse({
             "error": "Not all fields are set."
@@ -70,3 +67,30 @@ def createvariant(request):
     return JsonResponse(insert)
 
 
+def editvariant(request, pk):
+    if request.method == 'POST':
+        try:
+            instance = get_object_or_404(Variants, pk=pk)
+            
+            instance.Name = request.POST.get('Name')
+            instance.Age = request.POST.get('Age')
+            instance.Stage = request.POST.get('Stage')
+            instance.Description = request.POST.get('Description')
+            instance.Sequencer = request.POST.get('Sequencer')
+            instance.Gene = request.POST.get('Gene')
+            instance.cDNA_variant = request.POST.get('cDNA_variant')
+            instance.protein_variant = request.POST.get('protein_variant')
+            instance.genomic_variant = request.POST.get('genomic_variant')
+            instance.Classification = request.POST.get('Classification')
+            
+            instance.save()
+            return redirect('home')
+        
+        except Exception as e:
+            print(e)
+            return JsonResponse({'status': 'error'})
+    
+    else:
+        return JsonResponse({'status': 'error'})
+    
+    
